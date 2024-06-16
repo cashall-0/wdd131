@@ -1,3 +1,6 @@
+
+/* Import Google Font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* reset root element (doc) */
 * {
     margin: 0;
@@ -9,14 +12,14 @@
 body {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 90% ;
      grid-template-areas: 
        "header"
         "nav"
         "main"
         "footer";
     min-height: 90vh;
-    font-family: 'Arial, sans-serif';
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto; /* Center the page horizontally */
     max-width: 1000px; /* Set maximum width for the content */
 }
