@@ -127,7 +127,7 @@ function displayTemples(filter) {
         figure.classList.add('figure');
 
         const figcaption = document.createElement('figcaption');
-        figcaption.innerHTML = `<h1 class="fig-heading">${temple.templeName}</h1>`;
+        figcaption.innerHTML = `<h2 class="fig-heading"><strong>${temple.templeName}</strong></h2>`;
         figure.appendChild(figcaption);
 
         const location = document.createElement('p');
