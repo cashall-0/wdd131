@@ -1,0 +1,17 @@
+/* Set the background color */
+body {
+    background-color: #F5F8F2;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set the button and menu colors */
+button, .menu {
+    background-color: #2C7A15;
+    color: white; /* Assuming you want white text on buttons and menu */
+}
+
+/* Set the font color */
+body {
+    color: #6E924F;
+}
+
