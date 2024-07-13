@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="name: Promise Siyaka">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals |promise siyaka |Keyword summary of page content A form product review page for wdd131 course">
+    <title>WDD 131 - Dynamic Web Fundamentals - promise-siyaka-form product review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Product Review</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="review.html" method="get" class="review-form">
+              <h2 class="form-title">Product Review Form</h2>
+              
+              <!-- Product Name -->
+              <div class="form-group">
+                <label for="product" class="form-label">Product Name:</label>
+                <select id="product" name="product" class="form-input" required>
+                  <option value="" disabled selected>Select a Product ...</option>
+                </select>
+              </div>
+              
+              <!-- Overall Rating -->
+              <div class="form-group">
+                <fieldset class="rating">
+                  <legend class="form-label">Overall Rating:</legend>
+                  <input type="radio" id="star5" name="rating" value="5" required>
+                  <label for="star5">☆</label>
+                  <input type="radio" id="star4" name="rating" value="4">
+                  <label for="star4">☆</label>
+                  <input type="radio" id="star3" name="rating" value="3">
+                  <label for="star3">☆</label>
+                  <input type="radio" id="star2" name="rating" value="2">
+                  <label for="star2">☆</label>
+                  <input type="radio" id="star1" name="rating" value="1">
+                  <label for="star1">☆</label>
+                </fieldset>
+              </div>
+        
+              <!-- Date of Installation -->
+              <div class="form-group">
+                <label for="install-date" class="form-label">Date of Installation:</label>
+                <input type="date" id="install-date" name="install_date" class="form-input" required>
+              </div>
+        
+              <!-- Useful Features -->
+              <div class="form-group">
+                <fieldset class="useful-features">
+                  <legend class="form-label">Useful Features:</legend>
+                  <input type="checkbox" id="Durability" name="useful_features" value="Durability">
+                  <label for="Durability">Durability</label><br>
+                  <input type="checkbox" id="Peformance" name="useful_features" value="Peformance">
+                  <label for="Peformance">Peformance</label><br>
+                  <input type="checkbox" id="Design" name="useful_features" value="Design">
+                  <label for="Design">Design</label><br>
+                  <input type="checkbox" id="Ease of Use" name="useful_features" value="Ease of Use">
+                  <label for="Ease of Use">Ease of Use</label><br>
+                </fieldset>
+              </div>
+        
+              <!-- Written Review -->
+              <div class="form-group">
+                <label for="review" class="form-label">Written Review:</label>
+                <textarea id="review" name="review" class="form-input"></textarea>
+              </div>
+        
+              <!-- User Name -->
+              <div class="form-group">
+                <label for="username" class="form-label">Your Name:</label>
+                <input type="text" id="username" name="username" class="form-input">
+              </div>
+        
+              <!-- Form Submission Button -->
+              <div class="form-group">
+                <button type="submit" class="submit-button" >Submit Review</button>
+              </div>
+            </form>
+          </div>
+    </main>
+    <footer>
+        <p>&#169;<span id="year"></span> | promise siyaka | Nigeria</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
