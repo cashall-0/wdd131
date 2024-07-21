@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="name: Promise Siyaka">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals |promise siyaka |final project page for wdd131 course World project">
+    <title>WDD 131 - Dynamic Web Fundamentals - promise-siyaka- World project</title>
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/project-large.css">
+    <script defer src="./scripts/project.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>World Project</h1>
+            <button id="hamburger">&#9776;</button>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="#" onclick="displayJs('home')">Home</a></li>
+            <li><a href="#" onclick="displayJs('population')">Population</a></li>
+            <li><a href="#" onclick="displayJs('landmass')">landmass</a></li>
+            <li><a href="#" onclick="displayJs('lifeExpectancy')">LifeExpectancy</a></li>
+            <li><a href="#" onclick="displayJs('temperature')">Temperature</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="form-container">
+            <form class="form" onsubmit="return handleSubmit(event)">
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <h1 id="general-heading"></h1>
+        <div class="gallery" id="photoGallery"></div>
+        <div id="charts-container"></div>
+        <div id="countries-container"></div>
+    </main>
+    <footer>
+        <p>&#169;<span id="year"></span> | promise siyaka | Nigeria | <span id="clickCountDisplay"> ClickCount: </span></p>
+        <p>Last modification: <span id="lastModified"></span></p>
+        <p>Images from <a href="https://www.wikipedia.org/">@ wikipedia</a></p>
+    </footer>
+    
+</body>
+</html>

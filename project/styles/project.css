@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background: #699b82;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    min-height: 550px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+figure {
+    background-color: #8be5bc;
+    padding: 10px;
+}
+footer {
+    bottom: 0;
+    background: #699b82;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.fig-location, .fig-dedication, .fig-size {
+    color: rgb(90, 46, 105);
+
+}
+#photoGallery p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+#charts-container {
+    display: block;
+}
+
+.continent-chart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.chart-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.bar {
+    width: 80%; /* Adjust width for mobile view */
+    margin-bottom: 10px;
+    background-color: #8be5bc;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.bar-text {
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+}
+ /* Container for the countries list */
+ #countries-container {
+    flex: 1; /* Expand to fill available space */
+    padding: 20px;
+    overflow-y: auto;
+    background-color: hsl(169, 41%, 95%);
+}
+
+/* Style for the list of countries */
+#countries-container ul {
+    list-style-type: none;
+}
+
+#countries-container ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#countries-container ul li:last-child {
+    border-bottom: none;
+}
+/* Remove underline from all anchor tags */
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures the link inherits the text color of its parent */
+}
+
+/* Add glow effect on hover */
+a:hover {
+    text-decoration: none; /* Ensure underline stays removed on hover */
+    box-shadow: 0 0 5px rgba(142, 239, 189, 0.7), 0 0 10px rgba(43, 209, 104, 0.7), 0 0 15px rgba(96, 214, 100, 0.7);
+}
+
+/* Optional: Transition for smooth glowing effect */
+a {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+ /* Container styling */
+ .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Takes up half of the page width */
+    max-width: 600px; /* Optional: limit max width */
+    justify-content: center;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.form button:focus {
+    outline: none;
+}
+
+
+
+
+
+
